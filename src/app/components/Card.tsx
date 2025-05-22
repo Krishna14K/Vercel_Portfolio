@@ -167,15 +167,14 @@ function Band({
   const gltf = useGLTF(
     process.env.NODE_ENV === "development"
       ? "http://localhost:3000/Krishna.glb"
-      : "https://raw.githubusercontent.com/Krishna14K/Vercel_Portfolio/main/public/Krishna.glb
-"
+      : "https://vercel.com/krishna-kant-singhs-projects-eba8e00b/vercel-portfolio/7bBTA7gNzX5r2V5Q5zzCPatAnqPX/source?f=src%2Fpublic%2FKrishna.glb"
   );
   const { nodes, materials } = gltf as unknown as CustomGLTFResult;
 
   const texture = useTexture(
     process.env.NODE_ENV === "development"
       ? "http://localhost:3000/band.png"
-      : "https://raw.githubusercontent.com/Krishna14K/Vercel_Portfolio/blob/main/public/band.png"
+      : "https://vercel.com/krishna-kant-singhs-projects-eba8e00b/vercel-portfolio/7bBTA7gNzX5r2V5Q5zzCPatAnqPX/source?f=src%2Fpublic%2Fband.png"
   );
   const { width, height } = useThree((state) => state.size);
   const [curve] = useState(
