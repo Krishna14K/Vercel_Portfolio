@@ -174,7 +174,7 @@ function Band({
   const texture = useTexture(
     process.env.NODE_ENV === "development"
       ? "http://localhost:3000/band.png"
-      : "https://dakshie.xyz/band.png"
+      : "https://github.com/Krishna14K/Vercel_Portfolio/blob/main/public/band.png"
   );
   const { width, height } = useThree((state) => state.size);
   const [curve] = useState(
