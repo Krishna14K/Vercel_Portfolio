@@ -167,7 +167,7 @@ function Band({
   const gltf = useGLTF(
     process.env.NODE_ENV === "development"
       ? "http://localhost:3000/Krishna.glb"
-      : "https://dakshie.xyz/Dakshie.glb"
+      : "https://github.com/Krishna14K/Vercel_Portfolio/blob/main/public/Krishna.glb"
   );
   const { nodes, materials } = gltf as unknown as CustomGLTFResult;
 
